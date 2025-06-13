@@ -30,5 +30,8 @@ substitutions:
   _VM_NAME: haks-test-01
   _ZONE: us-central1-c
 
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 images:
   - '${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE_NAME}'
