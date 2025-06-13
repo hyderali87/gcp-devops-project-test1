@@ -26,7 +26,7 @@ steps:
 substitutions:
   _REGION: us-central1
   _REPOSITORY: devops-repo
-  _IMAGE_NAME: flask-web-app
+  _IMAGE_NAME: flask-web-app-02
   _VM_NAME: haks-test-01
   _ZONE: us-central1-c
 
