@@ -21,7 +21,7 @@ steps:
       - ssh
       - ${_VM_NAME}
       - --zone=${_ZONE}
-      - --command=sudo docker pull ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE_NAME} && sudo docker stop flask-web-app || true && sudo docker rm flask-web-app || true && sudo docker run -d --name flask-web-app -p 80:5000 ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE_NAME}
+      - --command="sudo docker pull ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE_NAME} && sudo docker stop flask-web-app || true && sudo docker rm flask-web-app || true && sudo docker run -d --name flask-web-app -p 80:5000 ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE_NAME}"
 
 substitutions:
   _REGION: us-central1
